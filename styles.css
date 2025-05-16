@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Agar padding tidak menambah ukuran elemen */
-  font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
 }
 
 /* Landing Page - Tampilan halaman awal */
@@ -22,16 +23,18 @@
 }
 
 .landing-content h1 {
-  font-size: 2rem; /* Ukuran font */
+  font-size: 2.4rem; /* Ukuran font */
   margin-top: 1.5rem; /* Jarak atas */
-  margin-bottom: 1.2rem; /* Jarak bawah */
+  margin-bottom: 1.4rem; /* Jarak bawah */
+  padding-left: 10px;
+  padding-right: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks */
 }
 
 .landing-content p {
-  font-size: 0.9rem;
-  font-weight: 100;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2.2rem;
   padding: 0px 35px;
 }
 
@@ -41,6 +44,7 @@
 
 .btn-explore {
   background-color: #c2794b; /* Warna tombol */
+  font-weight: 640;
   color: #1e1001;
   padding: 15px 40px; /* Ruang dalam tombol */
   border: none; /* Tanpa border */
@@ -114,7 +118,7 @@
 .nav-links a {
   color: white;
   text-decoration: none; /* Hapus garis bawah link */
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
@@ -139,6 +143,8 @@
 }
 
 .search-container h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
   text-align: center;
   color: #f3ebdd; /* warna rekomendasi tempat */
   max-width: 600px;
@@ -151,9 +157,15 @@
   font-size: medium;
 }
 
+.search-input-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .search-input {
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 20px 12px 45px; /* Padding kiri untuk ikon */
   color: #c8bfb2;
   border: 1px solid #1e1c21;
   background-color: #1e1c21;
@@ -161,6 +173,14 @@
   font-size: 1rem;
 }
 
+.search-icon {
+  position: absolute;
+  transform: translateY(83%);
+  padding-left: 1.2rem;
+  color: #c2794b;
+  font-size: 1.2rem;
+  pointer-events: none; /* Memastikan klik tetap berfungsi pada input */
+}
 /* Restaurant Cards Container - Container kartu restoran */
 .restaurants-container {
   max-width: 1200px;
@@ -210,21 +230,23 @@
 .restaurant-hours {
   color: #f57c1f; /* Warna jam operasional */
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .restaurant-rating {
   color: #f57c1f; /* Warna rating */
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .restaurant-distance {
   color: #f57c1f;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .favorite-btn {
+  font-weight: 650;
   background-color: #c2794b;
   color: #ffe6d7;
   border: 1px solid #c2794b;
@@ -259,6 +281,7 @@
   margin-top: 10px;
   font-size: 14px;
   transition: all 0.3s ease;
+  font-weight: 650;
 }
 
 .maps-btn:hover {
@@ -490,7 +513,7 @@ footer p {
   max-width: 100%;
   position: relative;
   margin: 0 auto 2rem auto;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -516,6 +539,7 @@ footer p {
   padding-top: 5px;
   padding-bottom: 15px;
   font-size: 1.2rem;
+  font-weight: 550;
 }
 
 /* Fading animation */
