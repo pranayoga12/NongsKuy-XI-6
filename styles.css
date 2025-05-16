@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Agar padding tidak menambah ukuran elemen */
-  font-family: "Poppins", sans-serif; /* Font yang digunakan */
+  font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
 }
 
 /* Landing Page - Tampilan halaman awal */
