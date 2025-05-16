@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- Bagian head berisi informasi tentang dokumen seperti judul, meta tag, dan link ke file CSS -->
+    <meta charset="UTF-8" />
+    <!-- Menentukan encoding karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Untuk tampilan responsif di perangkat mobile -->
+    <title>NongsKuy - Rekomendasi Tempat Nongkrong</title>
+    <!-- Judul halaman web yang muncul di tab browser -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Menghubungkan dokumen HTML dengan file CSS -->
+  </head>
+  <body>
+    <!-- Konten yang terlihat oleh pengguna -->
+
+    <!-- Landing Page - Halaman pertama yang muncul saat website dibuka -->
+    <section id="landing-page">
+      <div class="landing-content">
+        <img
+          src="images/kopi.jpg"
+          class="gambar-kopi"
+          data-aos-delay="200"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        />
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          Bingung Mau Nyari Tempat Nongkrong Dimana?
+        </h1>
+        <!-- Judul utama -->
+        <p data-aos="fade-in" data-aos-duration="1200" data-aos-delay="600">
+          Temukan rekomendasi tempat tongkrongan seru & hits di sekitarmu dengan
+          <span>Nongs</span>Kuy!
+        </p>
+        <!-- Deskripsi singkat -->
+        <button class="btn-explore" id="explore-btn">Cari Sekarang!</button>
+        <!-- Tombol untuk masuk ke aplikasi utama -->
+      </div>
+    </section>
+
+    <!-- Main Application - Bagian utama aplikasi (awalnya tersembunyi) -->
+    <main id="app">
+      <!-- Navbar - Menu navigasi di bagian atas -->
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo"><span>Nongs</span>Kuy.</div>
+          <!-- Hamburger Menu Icon -->
+          <div class="menu-toggle" id="menu-toggle">☰</div>
+          <!-- Navigation Links -->
+          <ul class="nav-links" id="nav-links">
+            <li>
+              <a href="#" class="nav-link active" data-page="home">Home</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-page="favorites">Favorit</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-page="about">Tentang Kita</a>
+            </li>
+            <!-- Back Button for Mobile -->
+            <button class="back-btn" id="back-btn">Kembali</button>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Home Page - Halaman utama dengan daftar tempat nongkrong dan pencarian -->
+      <section id="home-page" class="content-page" style="display: block">
+        <div class="search-section">
+          <div class="search-container">
+            <h2>Bingung Mau Nongkrong Dimana?</h2>
+            <div class="slideshow-container">
+              <div class="slides fade">
+                <img src="images/highlight1.jpg" alt="Cafe Image 1" />
+                <div class="slide-caption">Temukan Tempat Nongkrong</div>
+              </div>
+              <div class="slides fade">
+                <img src="satutitikcoffee/satik2.jpg" alt="Cafe Image 2" />
+                <div class="slide-caption">Tanpa Ribet</div>
+              </div>
+              <div class="slides fade">
+                <img src="pondacoffee/ponda1.jpg" alt="Cafe Image 3" />
+                <div class="slide-caption">Dengan NonsKuy</div>
+              </div>
+              <!-- Navigasi manual (opsional) -->
+              <div class="slideshow-nav">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+            </div>
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              placeholder="Mau nongkrong dimana?..."
+            />
+            <!-- Kotak pencarian untuk mencari tempat -->
+          </div>
+        </div>
+
+        <div class="restaurants-container">
+          <h2>Rekomendasi Cafe Terdekat</h2>
+          <div class="restaurant-cards" id="restaurant-list">
+            <!-- Kartu restoran akan ditambahkan di sini melalui JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Favorites Page - Halaman untuk menampilkan restoran favorit -->
+      <section id="favorites-page" class="content-page">
+        <h2>Restoran Favoritmu</h2>
+        <div id="favorites-container">
+          <!-- Restoran favorit akan ditampilkan di sini -->
+          <div class="no-favorites">
+            <h3>Belum ada tempat favorit</h3>
+            <p>Tandai tempat nongkrong favorit kamu untuk melihatnya di sini</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Page - Halaman informasi tentang website -->
+      <section id="about-page" class="content-page">
+        <h2>Tentang NongsKuy</h2>
+        <div class="about-section">
+          <!-- Informasi tentang website -->
+          <p>
+            Website ini dibuat sebagai tugas TIK dari Ibu Guru Anik. Kita
+            mengusung tema Rekomendasi Mencari Tempat Nongkrong, dengan website
+            ini kami berharap bahwa kami dapat membantu siswa-siswi SMAN 5
+            DENPASAR yang bingung mencari perkumpulan untuk curhat &
+            hangout&#128134;, belajar bareng&#9997;, main bareng sepulang
+            sekolah&#128520;, pacaran &#128150;, atau sekadar numpang
+            eksis.&#129331;
+          </p>
+
+          <p>
+            Website ini berbasis html, css dan javascript. dengan pengerjaan
+            total 1 minggu+- dan tanpa mengeluarkan dana sepeserpun
+          </p>
+
+          <p><strong>Anggota yang (terpaksa) membikin web ini:</strong></p>
+
+          <p>
+            👨‍💻 &nbsp;<strong>I Putu Pranayoga/12/XI-6</strong> – web developer &
+            ui/ux designer
+          </p>
+          <p>
+            👨‍💻 &nbsp;<strong>Amritsya Genio Anggara/01/XI-6</strong> – web
+            developer & give ui display suggestions
+          </p>
+          <p>
+            📸 &nbsp;<strong>Nurlela/01/XI-6</strong> – mencari data tempat
+            nongkrong
+          </p>
+          <p>
+            📸 &nbsp;<strong>Komang Tikta Blm/01/XI-6</strong> – mencari data
+            tempat nongkrong
+          </p>
+          <!-- Informasi lainnya... -->
+        </div>
+      </section>
+
+      <!-- Footer - Bagian bawah website -->
+      <footer>
+        <div class="footerdiv">
+          <p>&copy; 2025 NongsKuy - Rekomendasi Tempat Nongkrong Terbaik</p>
+          <p>follow instagram kami:</p>
+          <i class="fa fa-instagram" style="font-size: 48px; color: red"></i>
+          <p></p>
+          <div class="footerinstagram">
+            <a
+              href="https://www.instagram.com/pranayog4?igsh=OTJueWt1eXc5ZWJo "
+              target="_blank"
+              >@Pranayoga</a
+            >
+            <a
+              href="https://www.instagram.com/amritsya?igsh=czYyNWx1dnduMmlw "
+              target="_blank"
+              >@Amritsya</a
+            >
+            <a
+              href="https://www.instagram.com/llaa.n8?igsh=MTMycHNqODBwOWs1Mw== "
+              target="_blank"
+              >@Lala</a
+            >
+            <a
+              href="https://www.instagram.com/tikta.agrasidi?igsh=MWYzYmJjc2pjbDVnYQ== "
+              target="_blank"
+              >@Tikta</a
+            >
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Modal Menu Restaurant - Pop-up untuk menampilkan menu restoran -->
+    <div id="menu-modal" class="menu-modal">
+      <div class="menu-modal-content">
+        <span class="close-modal">&times;</span>
+        <!-- Tombol tutup modal -->
+        <h2 id="modal-restaurant-name"></h2>
+        <!-- Nama restoran -->
+        <div id="menu-container"></div>
+        <!-- Daftar menu akan ditampilkan di sini -->
+      </div>
+    </div>
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Menghubungkan dengan file JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

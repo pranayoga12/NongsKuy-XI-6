@@ -1,0 +1,624 @@
+/* Reset CSS - Menghapus margin dan padding default browser untuk konsistensi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Agar padding tidak menambah ukuran elemen */
+  font-family: "Poppins", sans-serif; /* Font yang digunakan */
+}
+
+/* Landing Page - Tampilan halaman awal */
+#landing-page {
+  background: linear-gradient(rgba(0, 1, 0, 0.4), rgba(0, 1, 0, 0.9)),
+    url("images/coffee.png") center/cover no-repeat; /* Background dengan lapisan gelap */
+  height: 100vh; /* Tinggi 100% dari viewport (layar) */
+  display: flex;
+  justify-content: center; /* Posisi konten di tengah secara vertikal */
+  align-items: center; /* Posisi konten di tengah secara horizontal */
+  text-align: center;
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+  color: white;
+  position: relative;
+}
+
+.landing-content h1 {
+  font-size: 2rem; /* Ukuran font */
+  margin-top: 1.5rem; /* Jarak atas */
+  margin-bottom: 1.2rem; /* Jarak bawah */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks */
+}
+
+.landing-content p {
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  padding: 0px 35px;
+}
+
+.landing-content p span {
+  color: #c2794b;
+}
+
+.btn-explore {
+  background-color: #c2794b; /* Warna tombol */
+  color: #1e1001;
+  padding: 15px 40px; /* Ruang dalam tombol */
+  border: none; /* Tanpa border */
+  border-radius: 30px; /* Sudut melengkung */
+  font-size: 1.2rem;
+  cursor: pointer; /* Ubah kursor saat hover */
+  transition: all 0.3s ease; /* Animasi saat hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
+}
+
+.btn-explore:hover {
+  background-color: #69442d; /* Warna berubah saat dihover */
+  color: wheat;
+  transform: scale(0.95); /* Tombol naik sedikit saat dihover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bayangan lebih tebal */
+}
+
+.gambar-kopi {
+  background-image: url("images/kopi.jpg");
+  width: 250px; /* Mengatur lebar elemen */
+  height: 300px; /* Mengatur tinggi elemen */
+  border-radius: 60px; /* Menambahkan sudut melengkung */
+}
+
+/* Main Application - Bagian utama aplikasi */
+#app {
+  display: none; /* Awalnya disembunyikan */
+  background-color: #121013;
+}
+
+/* Navbar - Menu navigasi */
+.navbar {
+  background: #121013;
+  padding: 0.8rem 0.8rem;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4); /* Bayangan di bawah navbar */
+  z-index: 100; /* Layer paling atas */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Display laptop, logo dikiri + navbar link dikanan */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #faebd7;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic; /* logo nongskuy */
+}
+
+.logo span {
+  color: #c2794b;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none; /* Hapus bullet point */
+}
+
+.nav-links li {
+  margin-left: 1.5rem; /* Jarak antar item menu */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none; /* Hapus garis bawah link */
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  transition: 0.45s ease;
+  color: #ff9b04; /* Warna berubah saat dihover */
+}
+
+.active {
+  border-bottom: 3px solid #ff9b04; /* Garis bawah untuk menu aktif */
+}
+
+/* Search Section - Bagian pencarian- banyak space*/
+.search-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-container h2 {
+  text-align: center;
+  color: #f3ebdd; /* warna rekomendasi tempat */
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.restaurants-container h2 {
+  color: #f3ebdd; /*warna rekomendasi cafe terdekat*/
+  margin-bottom: 1rem;
+  font-size: medium;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  color: #c8bfb2;
+  border: 1px solid #1e1c21;
+  background-color: #1e1c21;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+/* Restaurant Cards Container - Container kartu restoran */
+.restaurants-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.restaurant-cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  ); /* Grid responsif */
+  gap: 2rem; /* Jarak antar kartu */
+}
+
+/* Restaurant Card - Kartu restoran */
+.restaurant-card {
+  background-color: #1b191b;
+  border-radius: 10px;
+  overflow: hidden; /* Agar gambar tidak melewati border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-10px); /* Kartu naik saat dihover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih tebal */
+}
+
+.restaurant-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Agar gambar tidak terdistorsi */
+}
+
+.restaurant-info {
+  padding: 1.5rem;
+}
+
+.restaurant-name {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: white; /*warna judul card*/
+}
+
+.restaurant-hours {
+  color: #f57c1f; /* Warna jam operasional */
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.restaurant-rating {
+  color: #f57c1f; /* Warna rating */
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.restaurant-distance {
+  color: #f57c1f;
+  margin-bottom: 1rem;
+}
+
+.favorite-btn {
+  background-color: #c2794b;
+  color: #ffe6d7;
+  border: 1px solid #c2794b;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.favorite-btn:hover {
+  background-color: #512e19;
+  color: white;
+}
+
+.favorited {
+  background-color: palevioletred; /* Tombol yang sudah difavoritkan */
+  color: white;
+}
+
+/* Menambahkan style untuk tombol Maps Location */
+.maps-btn {
+  display: block;
+  width: 100%;
+  background-color: #3f78d3; /* Warna biru Google Maps */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.maps-btn:hover {
+  background-color: #244282; /* Warna biru Google Maps yang lebih gelap */
+  transform: scale(0.98);
+}
+
+/* Content Pages - Halaman konten */
+.content-page {
+  display: none; /* Awalnya disembunyikan */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Favorites Page - Halaman favorit */
+#favorites-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.no-favorites {
+  grid-column: 1 / -1; /* Menempati seluruh lebar grid */
+  text-align: center;
+  margin-top: 14rem;
+  margin-bottom: 16rem;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.no-favorites h3 {
+  font-size: x-large;
+}
+
+.no-favorites p {
+  color: rgba(255, 255, 255, 0.788);
+}
+
+/* About Page - Halaman tentang */
+.about-section {
+  line-height: 1.6; /* Jarak antar baris */
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+/* Footer - Bagian bawah website */
+footer {
+  background-color: #1c1b1c;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.footerinstagram a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.footerinstagram a:hover {
+  color: #3f78d3;
+  transition: 0.45s ease;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Modal Menu - Pop-up untuk menampilkan menu restoran */
+.menu-modal {
+  display: none; /* Awalnya disembunyikan */
+  position: fixed; /* Tetap di posisinya */
+  z-index: 1000; /* Layer paling atas */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Bisa di-scroll jika konten terlalu panjang */
+  background-color: rgba(0, 0, 0, 0.8); /* Background gelap transparan */
+}
+
+.menu-modal-content {
+  background-color: rgba(23, 23, 23, 0.957);
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh; /* 90% tinggi layar */
+  overflow-y: auto; /* Scroll vertikal jika perlu */
+  position: relative;
+  animation: modalFadeIn 0.4s; /* Animasi muncul */
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Muncul dari atas ke bawah, animasi popup menu*/
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Tombol back */
+.close-modal {  
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-modal:hover {
+  color: #ff8133; /* Warna berubah saat dihover */
+}
+
+#modal-restaurant-name {
+  color: #ff8133;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+#menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-card {
+  background-color: #1e1e1ef4;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px); /* Kartu naik saat dihover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih tebal */
+}
+
+.menu-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-info {
+  padding: 1rem;
+}
+
+.menu-name {
+  font-size: 1.2rem;
+  font-weight: 17rem;
+  color: #ffffff;
+}
+
+.menu-price {
+  color: #ff8133;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.menu-description {
+  color: #b7b7b7;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Kursor pointer untuk kartu restoran */
+.restaurant-card {
+  cursor: pointer; /* Ubah kursor menjadi tangan saat dihover */
+}
+
+/* Hamburger Menu - Mobile Navigation */
+.menu-toggle {
+  display: none; /* Hidden by default on desktop */
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.back-btn {
+  display: none; /* Hidden by default */
+  background-color: #c2794b;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #512e19;
+  color: wheat;
+}
+
+/* Slideshow Styles - SLIDE SHOW REKOMENDASI TEMPAT*/
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: none;
+  width: 100%;
+}
+
+.slides img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Dots/bullets/indicators */
+.slideshow-nav {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.active-dot,
+.dot:hover {
+  background-color: #c2794b;
+}
+
+@media (max-width: 768px) {
+  .landing-content h1 {
+    font-size: 2rem; /* Font lebih kecil di mobile */
+  }
+
+  .navbar-container {
+    flex-direction: row; /* Keep row for logo and hamburger */
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hide off-screen initially */
+    width: 70%; /* Take up 70% of screen width */
+    height: 100vh;
+    background: linear-gradient(to right, #1f1e21, #121013);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem;
+    transition: right 0.3s ease;
+    z-index: 1001;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links.active {
+    right: 0; /* Show menu when active */
+  }
+
+  .nav-links li {
+    margin: 1.5rem 0; /* Vertical spacing between menu items */
+  }
+
+  .back-btn {
+    display: block; /* Show back button in mobile menu */
+    margin-top: 2rem;
+  }
+
+  .slides img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .about-section {
+    font-size: 1rem;
+    text-align: justify;
+    word-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+   
+  .footerdiv {
+    font-size: 0.85rem;
+  }
+
+  .footerinstagram a {
+  padding: 4px;
+  }
