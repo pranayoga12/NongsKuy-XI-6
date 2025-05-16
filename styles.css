@@ -648,4 +648,9 @@ footer p {
   .footerinstagram a {
     padding: 4px;
   }
+  
+  .about-section {
+  font-size: 0.87rem;
+  font-weight: 400;
+  }
 }
