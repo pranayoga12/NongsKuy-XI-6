@@ -21,12 +21,6 @@
   position: relative;
 }
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .landing-content h1 {
   font-size: 2rem; /* Ukuran font */
   margin-top: 1.5rem; /* Jarak atas */
@@ -634,6 +628,6 @@ footer p {
 
 @media (max-width: 420px) {
   .landing-content h1 {
-    font-size: 1.7rem; /* Font lebih kecil di mobile */
+    font-size: 1.8rem; /* Font lebih kecil di mobile */
   }
 }
