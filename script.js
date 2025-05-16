@@ -14,70 +14,80 @@ const restaurants = [
         name: "Americano",
         price: "Rp12.000",
         image: "pondacoffee/americano.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Americano adalah minuman kopi terbuat dari espresso yang menciptakan rasa kopi yang ringan namun tetap kuat.",
       },
 
       {
         name: "Cappucino",
         price: "Rp17.000",
         image: "pondacoffee/cappucino.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Cappuccino adalah minuman berbasis espresso yang dicampur dengan susu panas dan lapisan busa susu di atasnya.",
       },
 
       {
         name: "Choco Hazelnut",
         price: "Rp17.000",
         image: "pondacoffee/Choco Hazelnut.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Choco Hazelnut adalah minuman manis yang memadukan cokelat dengan rasa kacang hazelnut yang khas.",
       },
 
       {
         name: "Churros",
         price: "Rp16.000",
         image: "pondacoffee/Churros.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Churros adalah camilan manis khas Spanyol yang terbuat dari adonan tepung yang digoreng hingga renyah keemasan, kemudian ditaburi gula halus atau kayu manis.",
       },
 
       {
         name: "Ice Coffee Latte",
         price: "Rp16.000",
         image: "pondacoffee/Ice Coffe Latte.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Perpaduan espresso dan susu dingin yang creamy dengan es batu, menghadirkan rasa kopi yang lembut dan menyegarkan.",
       },
 
       {
         name: "Kopi Susu Ponda-C",
         price: "Rp15.000",
         image: "pondacoffee/Kopi Susu.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Minuman klasik dengan racikan kopi dan susu kental manis yang manis, gurih, dan bikin nagih—cocok untuk pencinta kopi santai.",
       },
 
       {
         name: "Matcha",
         price: "Rp18.000",
         image: "pondacoffee/Matcha.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Minuman berbahan dasar bubuk teh hijau Jepang dengan susu, menghasilkan rasa earthy yang lembut dan menenangkan.",
       },
 
       {
         name: "Red Virgin",
         price: "Rp17.000",
         image: "pondacoffee/Red Virgi.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Minuman segar berbasis teh dengan sentuhan rasa buah merah—manis, asam, dan cocok dinikmati dingin di cuaca panas.",
       },
 
       {
         name: "Sandwich",
         price: "Rp25.000",
         image: "pondacoffee/Sandwich.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Roti panggang renyah dengan berbagai pilihan topping lezat: manis-asam dari blueberry, creamy manis dari cokelat, hingga segarnya stroberi.",
       },
 
       {
         name: "Toast Blueberry, Chocolate, Strawberry",
         price: "Rp12.000",
         image: "pondacoffee/Toast.jpg", // Gambar menu
-        description: "Americano mantap",
+        description:
+          "Roti lapis berisi daging, sayuran, dan saus pilihan—praktis, mengenyangkan, dan cocok untuk semua waktu makan.",
       },
     ],
   },
@@ -97,70 +107,80 @@ const restaurants = [
         name: "Ice Coffee Caramel",
         price: "Rp15.000",
         image: "satutitikcoffee/Es Kopi Caramel_ 15K.jpg", // Gambar menu
-        description: "Es Kopi dengan tambahan rasa manis caramel",
+        description:
+          "Kopi dingin dengan sentuhan karamel manis dan creamy, cocok untuk penyuka kopi dengan rasa manis yang lembut.",
       },
 
       {
         name: "Ice Americano",
         price: "Rp20.000",
         image: "satutitikcoffee/Ice Americano_ 20K.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Espresso dengan air dingin dan es batu—ringan, pahit segar, dan menyegarkan.",
       },
 
       {
         name: "Ice Red Velvet",
         price: "Rp20.000",
         image: "satutitikcoffee/Ice Red Velvet_ 20K.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Minuman creamy dengan rasa khas red velvet, manis dan lembut, disajikan dingin untuk sensasi yang memanjakan.",
       },
 
       {
         name: "Lemon Tea",
         price: "Rp14.000",
         image: "satutitikcoffee/Lemon Tea_ 14K.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Teh hitam segar dengan perasan lemon, manis-asam menyegarkan, pas diminum kapan saja.",
       },
 
       {
         name: "Ice Taro Latte",
         price: "Rp23.000",
         image: "satutitikcoffee/Ice Taro Latte_ 23K.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Perpaduan susu dan taro (talas) dengan rasa manis dan aroma khas, lembut dan menyegarkan.",
       },
 
       {
         name: "Lychee Tea",
         price: "Rp13.000",
         image: "satutitikcoffee/Lychee Tea_ 13K.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Teh dingin dengan rasa leci manis dan harum, memberikan kesegaran tropis yang ringan.",
       },
 
       {
         name: "Mango Tea",
         price: "Rp18.000",
         image: "satutitikcoffee/Mango Tea_ 18K.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Teh buah mangga yang manis dan segar, sempurna untuk dinikmati di hari yang panas.",
       },
 
       {
         name: "Chicken Black Pepper",
         price: "Rp25.000",
         image: "satutitikcoffee/Chicken Black Pepper_ 25K.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Potongan ayam empuk dengan saus lada hitam yang gurih dan pedas, cocok disantap hangat dengan nasi.",
       },
 
       {
         name: "Spaghetti Bolognese",
         price: "Rp28.000",
         image: "satutitikcoffee/Spaghetti Bolognese_ Rp. 28.000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Spaghetti dengan saus daging cincang khas Italia yang kaya rasa, gurih, dan menggugah selera.",
       },
 
       {
         name: "Chicken Creamy Mushroom",
         price: "Rp25.000",
         image: "satutitikcoffee/Chicken Creamy Mushroom_ 25K.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Ayam panggang atau goreng disajikan dengan saus krim jamur yang lembut dan savory—comfort food yang creamy dan nikmat.",
       },
     ],
   },
@@ -180,70 +200,80 @@ const restaurants = [
         name: "Chocolate Frappe",
         price: "Rp27.000",
         image: "tomorocoffee/Chocolate Frappe Rp.27,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Minuman cokelat dingin yang diblender halus, creamy dan manis, cocok untuk segala suasana.",
       },
 
       {
         name: "Choco Oat Latte",
         price: "Rp32.000",
         image: "tomorocoffee/Choco Oat Latte Rp.32,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Kombinasi cokelat dan susu oat yang creamy dan rich, dengan rasa manis yang seimbang.",
       },
 
       {
         name: "Matcha Frappe",
         price: "Rp30.000",
         image: "tomorocoffee/Matcha Frappe Rp.30,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Blended matcha dingin yang creamy dan menyegarkan, cocok untuk pecinta matcha sejati.",
       },
 
       {
         name: "Matcha Latte",
         price: "Rp30.000",
         image: "tomorocoffee/Matcha Latte Rp.30,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Minuman teh hijau Jepang dengan susu, menghasilkan rasa earthy yang lembut dan menenangkan.",
       },
 
       {
         name: "Stawberry Coconut Frappe",
         price: "Rp30.000",
         image: "tomorocoffee/Stawberry Coconut Frappe RRp.30,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Frappe dingin dengan kombinasi stroberi segar dan santan, manis, creamy, dan tropis.",
       },
 
       {
         name: "Strawberry Jasmine Tea",
         price: "Rp24.000",
         image: "tomorocoffee/Strawberry Jasmine Tea Rp.24,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Teh jasmine segar berpadu dengan rasa stroberi manis-asam, menghasilkan minuman floral dan fruity yang menyegarkan.",
       },
 
       {
-        name: "TOMORO Oat Latte",
+        name: "Oat Latte",
         price: "Rp26.000",
         image: "tomorocoffee/TOMORO Oat Latte Rp.26,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Perpaduan espresso dan susu oat yang creamy dan ringan, cocok untuk kamu yang cari alternatif dairy-free.",
       },
 
       {
         name: "Cinnamon Roll",
         price: "Rp22.000",
         image: "tomorocoffee/Cinnamon Roll Rp.22,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Roti gulung lembut dengan taburan kayu manis dan gula, dilengkapi glasir manis di atasnya—aromatik dan lezat di setiap gigitan.",
       },
 
       {
-        name: "Butter Croissant Rp.18,000",
+        name: "Butter Croissant",
         price: "Rp18.000",
         image: "tomorocoffee/Butter Croissant Rp.18,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Croissant klasik dengan rasa mentega yang kaya dan tekstur yang ringan serta flaky, sempurna untuk teman kopi atau teh.",
       },
 
       {
-        name: "Chocolate Croissant Rp.12,000",
+        name: "Chocolate Croissant",
         price: "Rp12.000",
         image: "tomorocoffee/Chocolate Croissant Rp.12,000.png", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Pastry renyah berlapis-lapis dengan isian cokelat leleh di dalamnya—manis, buttery, dan memanjakan.",
       },
     ],
   },
@@ -263,70 +293,80 @@ const restaurants = [
         name: "Tokyo",
         price: "Rp25.000",
         image: "imadjicoffee/Tokyo Rp.25,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Minuman hijau creamy yang segar dengan rasa manis lembut, cocok untuk menyegarkan hari.",
       },
 
       {
         name: "Bangkok",
         price: "Rp23.000",
         image: "imadjicoffee/Bangkok Rp.23,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Minuman cokelat hangat yang kaya rasa, manis dan creamy, sempurna untuk pencinta cokelat.",
       },
 
       {
         name: "Beijing",
         price: "Rp19.000",
         image: "imadjicoffee/Beijing Rp.19,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Minuman kuning cerah dengan rasa manis segar dan sedikit eksotis, memberikan sensasi unik.",
       },
 
       {
         name: "Scotland",
         price: "Rp27.000",
         image: "imadjicoffee/Scotland Rp.27,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Kopi susu yang creamy dan lembut, memadukan pahitnya kopi dengan gurihnya susu.",
       },
 
       {
         name: "Klepons",
         price: "Rp23.000",
         image: "imadjicoffee/Klepons (Cold) Rp.23,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Perpaduan kopi dengan cita rasa klepon manis dan gurih, menciptakan sensasi tradisional dalam secangkir kopi.",
       },
 
       {
         name: "Burries",
         price: "Rp23.000",
         image: "imadjicoffee/Burries (Cold) Rp.23,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Minuman cokelat lezat yang creamy dan manis, cocok untuk penggemar rasa cokelat yang kaya.",
       },
 
       {
         name: "Long Black",
         price: "Rp18.000",
         image: "imadjicoffee/Long Black (Cold) Rp.18,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Espresso dengan tambahan air panas, menghasilkan kopi hitam pekat yang kuat dan segar.",
       },
 
       {
         name: "Chicken Sandwich",
         price: "Rp30.000",
         image: "imadjicoffee/Chicken Sandwich Rp.30,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Roti lapis dengan ayam juicy, sayuran segar, dan saus lezat—praktis dan mengenyangkan.",
       },
 
       {
         name: "Spicy Chicken Popcorn",
         price: "Rp34.000",
         image: "imadjicoffee/Spicy Chicken Popcorn Rp.34,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Potongan ayam kecil berbumbu pedas yang renyah, cocok sebagai camilan gurih dan menggoda selera.",
       },
 
       {
         name: "French Fries",
         price: "Rp23.000",
         image: "imadjicoffee/French Fries Rp.23,000.jpg", // Gambar menu
-        description: "Tehnya Ditarik Sama Genio",
+        description:
+          "Kentang goreng renyah dan gurih, favorit klasik yang pas sebagai teman makan atau cemilan.",
       },
     ],
   },
