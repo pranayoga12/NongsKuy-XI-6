@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Agar padding tidak menambah ukuran elemen */
-  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
+  font-family: "Poppins", sans-serif; /* Font yang digunakan */
 }
 
 /* Landing Page - Tampilan halaman awal */
@@ -22,7 +22,6 @@
 }
 
 .landing-content h1 {
-  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
   font-size: 2rem; /* Ukuran font */
   margin-top: 1.5rem; /* Jarak atas */
   margin-bottom: 1.2rem; /* Jarak bawah */
@@ -30,20 +29,17 @@
 }
 
 .landing-content p {
-  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   font-weight: 100;
   margin-bottom: 2rem;
   padding: 0px 35px;
 }
 
 .landing-content p span {
-  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
   color: #c2794b;
 }
 
 .btn-explore {
-  font-family: "Poppins", sans-serif;
   background-color: #c2794b; /* Warna tombol */
   color: #1e1001;
   padding: 15px 40px; /* Ruang dalam tombol */
@@ -563,7 +559,7 @@ footer p {
 
 @media (max-width: 768px) {
   .landing-content h1 {
-    font-size: 1.9rem; /* Font lebih kecil di mobile */
+    font-size: 1.6rem; /* Font lebih kecil di mobile */
   }
 
   .navbar-container {
@@ -627,11 +623,5 @@ footer p {
 
   .footerinstagram a {
     padding: 4px;
-  }
-}
-
-@media (max-width: 420px) {
-  .landing-content h1 {
-    font-size: 1.8rem; /* Font lebih kecil di mobile */
   }
 }
