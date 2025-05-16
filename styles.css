@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Agar padding tidak menambah ukuran elemen */
-  font-family: "Poppins", sans-serif; /* Font yang digunakan */
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
 }
 
 /* Landing Page - Tampilan halaman awal */
@@ -22,6 +22,7 @@
 }
 
 .landing-content h1 {
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
   font-size: 2rem; /* Ukuran font */
   margin-top: 1.5rem; /* Jarak atas */
   margin-bottom: 1.2rem; /* Jarak bawah */
@@ -29,6 +30,7 @@
 }
 
 .landing-content p {
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
   font-size: 0.9rem;
   font-weight: 100;
   margin-bottom: 2rem;
@@ -36,10 +38,12 @@
 }
 
 .landing-content p span {
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
   color: #c2794b;
 }
 
 .btn-explore {
+  font-family: "Poppins", sans-serif;
   background-color: #c2794b; /* Warna tombol */
   color: #1e1001;
   padding: 15px 40px; /* Ruang dalam tombol */
