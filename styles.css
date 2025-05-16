@@ -558,8 +558,9 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  font-family: "Poppins", sans-serif; /* Font yang digunakan */
   .landing-content h1 {
-    font-size: 1.8rem; /* Font lebih kecil di mobile */
+    font-size: 1.9rem; /* Font lebih kecil di mobile */
   }
 
   .navbar-container {
@@ -623,5 +624,11 @@ footer p {
 
   .footerinstagram a {
     padding: 4px;
+  }
+}
+
+@media (max-width: 420px) {
+  .landing-content h1 {
+    font-size: 1.7rem; /* Font lebih kecil di mobile */
   }
 }
