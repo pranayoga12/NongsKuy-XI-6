@@ -165,7 +165,7 @@
 
 .search-input {
   width: 100%;
-  padding: 12px 20px 12px 45px; /* Padding kiri untuk ikon */
+  padding: 12px 20px 12px; /* Padding kiri untuk ikon */
   color: #c8bfb2;
   border: 1px solid #1e1c21;
   background-color: #1e1c21;
@@ -173,14 +173,6 @@
   font-size: 1rem;
 }
 
-.search-icon {
-  position: absolute;
-  transform: translateY(83%);
-  padding-left: 1.2rem;
-  color: #c2794b;
-  font-size: 1.2rem;
-  pointer-events: none; /* Memastikan klik tetap berfungsi pada input */
-}
 /* Restaurant Cards Container - Container kartu restoran */
 .restaurants-container {
   max-width: 1200px;
@@ -648,9 +640,9 @@ footer p {
   .footerinstagram a {
     padding: 4px;
   }
-  
-  .about-section {
+}
+
+.about-section {
   font-size: 0.87rem;
   font-weight: 400;
-  }
 }
