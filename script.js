@@ -191,7 +191,7 @@ const restaurants = [
     image: "tomorocoffee/tomorocard.jpg", // Gambar placeholder untuk restoran
     hours: "07:00 - 22:00", // Jam operasional cafe
     rating: 4.7, // Nilai rating restoran (dari 5)
-    distance: "4.2 km", // Jarak restoran dari lokasi pengguna
+    distance: "4.1 km", // Jarak restoran dari lokasi pengguna
     mapsUrl:
       "https://www.google.com/maps/place/TOMORO+COFFEE+-+Sesetan/@-8.6796547,115.2116124,15.83z/data=!4m6!3m5!1s0x2dd2419b879f2bd9:0x13aa3d0da3333020!8m2!3d-8.6793134!4d115.2150307!16s%2Fg%2F11vc1h_v81?entry=ttu&g_ep=EgoyMDI1MDQyNy4xIKXMDSoASAFQAw%3D%3D", // URL Google Maps untuk restoran
     menus: [
